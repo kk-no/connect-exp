@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package ping.v1;
+
+option go_package = "github.com/kk-no/exp-connect/gen/proto/ping/v1;pingv1";
+
+message PingRequest {}
+
+message PingResponse {}
+
+service PingService {
+  rpc Ping(PingRequest) returns (PingResponse) {}
+}
